@@ -1,13 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+import "./App.css";
 
-function App() {
+const Header = styled.header`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const Logo = styled.h1``;
+
+const App = () => {
   return (
     <div className="App">
-      devfinder Light Dark Search GitHub username... Search Joined Repos
-      Followers Following
+      <Header>
+        <Logo>devfinder</Logo> Light Dark
+      </Header>
+      Search GitHub username... Search Joined Repos Followers Following
     </div>
   );
-}
+};
 
 export default App;
